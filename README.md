@@ -9,7 +9,7 @@ The API can be used to access any type of Instagram account but only provides re
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'insta'
+gem 'insta-api'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install insta
+    $ gem install insta-api
 
 ## Usage
 ##### Step 1: Authorization Window URL
