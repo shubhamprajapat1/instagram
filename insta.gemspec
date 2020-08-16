@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
   s.files       = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  s.homepage    = 'https://rubygems.org/gems/insta-api'
+  s.homepage    = 'https://github.com/shubhamprajapat1/instagram'
   s.metadata    = { "source_code_uri" => "https://github.com/shubhamprajapat1/instagram" }
 end
