@@ -19,12 +19,13 @@ And then execute:
 Or install it yourself as:
 
     $ gem install insta-api
-    irb: require 'insta'
+
 
 ## Usage
 ##### Step 1: Authorization Window URL
 Construct the Authorization Window URL below, replacing {app-id} with your Instagram app’s ID (from the App `Dashboard > Products > Instagram > Basic Display > Instagram App ID field`), replacing {app-secret} with your Instagram app’s ID (from the App `Dashboard > Products > Instagram > Basic Display > Instagram App Secret`) and {redirect-uri} with your website URL that you provided in Step 2 (`Valid OAuth Redirect URIs`). The URL must be exactly the same.
 ```sh
+> require 'insta'
 > options = { redirect_uri: `redirect-uri`, client_id: `app-id`, client_secret: `app-secret` }
 > client = Insta::Client.new(options)
 > client.auth_url 
@@ -64,6 +65,7 @@ code => ....auth/?`code=AQDp3TtBQQ...`#_
 
 - create new client
 ```sh
+    > require 'insta'
     > access_token = "IGQVJ..."
     > client = Insta::API.new(access_token)
 ```
