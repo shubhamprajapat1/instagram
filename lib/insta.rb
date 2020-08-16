@@ -69,7 +69,7 @@ module Insta
     end
 
     def media(limit = 100)
-      url = "https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=#{access_token}&limit=#{limit}"
+      url = "https://graph.instagram.com/me/media?fields=id,media_type,caption,permalink,thumbnail_url,media_url,username,timestamp&access_token=#{access_token}&limit=#{limit}"
       response  = get(url)
       puts response.dig('paging', 'next')
       @next_url = response.dig('paging', 'next') unless response.dig('paging', 'next').nil?
